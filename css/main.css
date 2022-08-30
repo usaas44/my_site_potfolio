@@ -1,0 +1,299 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    background-color: #F1F1F1;
+    padding-top: 46px;
+
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    position: relative;
+    padding: 0 12px 3px 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: black;
+    transition: 0.4s linear;
+}
+
+.logo:hover {
+    color: rgb(112, 108, 108)
+}
+
+.logo:active {
+    position: relative;
+    top: 1px;
+}
+
+.logo::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #FDA300;
+    border-radius: 50%;
+
+}
+
+/* nav */
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.nav-button {
+    display: none;
+}
+
+.nav-link {
+    color: #000;
+    transition: 0.5s linear;
+}
+
+.nav-link:hover {
+    color: #606060;
+}
+
+.nav-link:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Header contetn*/
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.hero-mobile {
+    display: none;
+}
+
+.hero {
+    margin-top: 76px;
+}
+
+.header-content {
+    margin-top: 203px;
+}
+
+.header-txt {
+    margin-top: 20px;
+}
+
+.header-heading {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 66px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/* Services section */
+
+.services-row {
+    display: flex;
+    column-gap: 30px;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.service-card-txt {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.servises-item {
+    margin-top: 90px;
+}
+
+.service-card-title {
+    margin-top: 30px;
+}
+
+.service-card-txt {
+    margin-top: 10px;
+    padding-bottom: 90px;
+}
+
+/* Portfolio section */
+
+.portfolio {
+    background-color: #F1F1F1;
+    ;
+}
+
+.potfolo-title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 90px;
+}
+
+.potfolio-txt, .portf-refer {  
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 10px 0;
+   
+
+}
+
+.portfolio-ref {  
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    transition: 0.4s linear;
+}
+
+.portfolio-ref:hover{  
+    color:#FDA300;
+    font-size: 19px;
+}
+
+.portfolio-ref:active{  
+    position: relative;
+    top: 2px;
+}
+
+.portfolio-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 350px;
+}
+
+
+.down-ref {
+margin-bottom: 90px;
+}
+
+/* Footer */
+
+.contacts-social {
+    display: flex;
+    column-gap: 61px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 90px;
+
+}
+
+.contact-txt {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.contacts-button {
+    text-align: center;
+    background-color: #070707;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    padding: 7px 22px;
+    border-radius: 30px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.btn {
+    color: white;
+    transition: 0.8s linear;
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+.social-txt {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #828282;
+    padding-bottom: 90px;
+    margin-top: 41px;
+
+}
